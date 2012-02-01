@@ -1,34 +1,27 @@
-#ifndef _CLOSED_SHAPE_H
-#define _CLOSED_SHAPE_H
+//
+//  ClosedShape.h
+//  jelly
+//
+//  Created by Kevin Loken on 12-02-01.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
 
-#include "JellyPrerequisites.h"
-#include "Vector2.h"
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
-#include <vector>
+struct JPClosedShapeOpaque;
 
-namespace JellyPhysics {
-	
-	class ClosedShape
-	{
-	private:
-		Vector2List	mLocalVertices;
-		
-	public:
-		ClosedShape() {}
-		ClosedShape( Vector2List input ) { mLocalVertices = input; finish(); }
-		
-		void begin();
-		int addVertex( const Vector2& vec );
-		void finish( bool recenter = true );
-		
-		Vector2List& getVertices() { return mLocalVertices; }
-		
-		Vector2List transformVertices(const Vector2& worldPos, float angleInRadians, const Vector2& scale);
-		void transformVertices(const Vector2& worldPos, float angleInRadians, const Vector2& scale, Vector2List& outList);
-		
-		
-	};
-	
-}	// end namespace JellyPhysics
+@interface ClosedShape : NSObject
+{
+    struct JPClosedShapeOpaque* _cpp;
+}
 
-#endif // _CLOSED_SHAPE_H
+@property (nonatomic, assign) struct JPClosedShapeOpaque* cpp;
+
+-(void)begin;
+-(void)addVertex:(CGPoint)vertex;
+-(void)finish;
+
+-(void)log;
+
+@end

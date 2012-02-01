@@ -12,6 +12,7 @@
 #include "World.h"
 #include "SpringBody.h"
 #include "PressureBody.h"
+#include "JPFallingBody.h"
 
 #endif
 
