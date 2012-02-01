@@ -1,0 +1,231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A91E19014D9C04B00A6D61C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91E18F14D9C04B00A6D61C /* Foundation.framework */; };
+		6A91E19614D9C04B00A6D61C /* jelly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A91E19514D9C04B00A6D61C /* jelly.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A91E18C14D9C04B00A6D61C /* libjelly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjelly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A91E18F14D9C04B00A6D61C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A91E19314D9C04B00A6D61C /* jelly-Prefix.pch */ = {isa = PBXFileReference; path = "jelly-Prefix.pch"; sourceTree = "<group>"; };
+		6A91E19414D9C04B00A6D61C /* jelly.h */ = {isa = PBXFileReference; path = jelly.h; sourceTree = "<group>"; };
+		6A91E19514D9C04B00A6D61C /* jelly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jelly.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A91E18914D9C04B00A6D61C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A91E19014D9C04B00A6D61C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A91E18114D9C04B00A6D61C = {
+			isa = PBXGroup;
+			children = (
+				6A91E19114D9C04B00A6D61C /* jelly */,
+				6A91E18E14D9C04B00A6D61C /* Frameworks */,
+				6A91E18D14D9C04B00A6D61C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A91E18D14D9C04B00A6D61C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A91E18C14D9C04B00A6D61C /* libjelly.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A91E18E14D9C04B00A6D61C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A91E18F14D9C04B00A6D61C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A91E19114D9C04B00A6D61C /* jelly */ = {
+			isa = PBXGroup;
+			children = (
+				6A91E19414D9C04B00A6D61C /* jelly.h */,
+				6A91E19514D9C04B00A6D61C /* jelly.m */,
+				6A91E19214D9C04B00A6D61C /* Supporting Files */,
+			);
+			path = jelly;
+			sourceTree = "<group>";
+		};
+		6A91E19214D9C04B00A6D61C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A91E19314D9C04B00A6D61C /* jelly-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A91E18A14D9C04B00A6D61C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A91E18B14D9C04B00A6D61C /* jelly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A91E19914D9C04B00A6D61C /* Build configuration list for PBXNativeTarget "jelly" */;
+			buildPhases = (
+				6A91E18814D9C04B00A6D61C /* Sources */,
+				6A91E18914D9C04B00A6D61C /* Frameworks */,
+				6A91E18A14D9C04B00A6D61C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jelly;
+			productName = jelly;
+			productReference = 6A91E18C14D9C04B00A6D61C /* libjelly.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A91E18314D9C04B00A6D61C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 6A91E18614D9C04B00A6D61C /* Build configuration list for PBXProject "jelly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A91E18114D9C04B00A6D61C;
+			productRefGroup = 6A91E18D14D9C04B00A6D61C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A91E18B14D9C04B00A6D61C /* jelly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A91E18814D9C04B00A6D61C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A91E19614D9C04B00A6D61C /* jelly.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A91E19714D9C04B00A6D61C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A91E19814D9C04B00A6D61C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A91E19A14D9C04B00A6D61C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/jelly.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jelly/jelly-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6A91E19B14D9C04B00A6D61C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/jelly.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jelly/jelly-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A91E18614D9C04B00A6D61C /* Build configuration list for PBXProject "jelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A91E19714D9C04B00A6D61C /* Debug */,
+				6A91E19814D9C04B00A6D61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A91E19914D9C04B00A6D61C /* Build configuration list for PBXNativeTarget "jelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A91E19A14D9C04B00A6D61C /* Debug */,
+				6A91E19B14D9C04B00A6D61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A91E18314D9C04B00A6D61C /* Project object */;
+}
