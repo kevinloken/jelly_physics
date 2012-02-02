@@ -23,5 +23,6 @@ struct JPClosedShapeOpaque;
 -(void)finish;
 
 -(void)log;
+-(CGPoint)vertex:(int)vertex;
 
 @end

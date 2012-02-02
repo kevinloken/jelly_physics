@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#include "JPFallingBody.h"
+#include "FallingBody.h"
 
 namespace JellyPhysics 
 {

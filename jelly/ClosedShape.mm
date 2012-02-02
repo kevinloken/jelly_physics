@@ -46,4 +46,11 @@
         NSLog(@"vertex %d: position => %f, %f", i, vertices[i].X, vertices[i].Y);
     }
 }
+
+-(CGPoint)vertex:(int)vertex
+{
+    JellyPhysics::Vector2List vertices = self.cpp->shape->getVertices();
+    return CGPointMake(vertices[vertex].X, vertices[vertex].Y);
+}
+
 @end
