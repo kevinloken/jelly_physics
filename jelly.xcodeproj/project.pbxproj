@@ -37,11 +37,11 @@
 		6A8DE47114D9D6150031A740 /* Opaque.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8DE47014D9D6150031A740 /* Opaque.h */; };
 		6A8DE47414D9D9F90031A740 /* ClosedShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8DE47214D9D9F90031A740 /* ClosedShape.h */; };
 		6A8DE47514D9D9F90031A740 /* ClosedShape.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A8DE47314D9D9F90031A740 /* ClosedShape.mm */; };
-		6A8DE47E14D9E1EC0031A740 /* JPFallingBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A8DE47C14D9E1EC0031A740 /* JPFallingBody.cpp */; };
-		6A8DE47F14D9E1EC0031A740 /* JPFallingBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8DE47D14D9E1EC0031A740 /* JPFallingBody.h */; };
 		6A8DE48214D9E20A0031A740 /* FallingBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8DE48014D9E20A0031A740 /* FallingBody.h */; };
 		6A8DE48314D9E20A0031A740 /* FallingBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A8DE48114D9E20A0031A740 /* FallingBody.mm */; };
 		6A91E19014D9C04B00A6D61C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A91E18F14D9C04B00A6D61C /* Foundation.framework */; };
+		6AC6DDC714DAF54000B45295 /* FallingBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6DDC514DAF54000B45295 /* FallingBody.cpp */; };
+		6AC6DDC814DAF54000B45295 /* FallingBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC6DDC614DAF54000B45295 /* FallingBody.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,13 +75,13 @@
 		6A8DE47014D9D6150031A740 /* Opaque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Opaque.h; sourceTree = "<group>"; };
 		6A8DE47214D9D9F90031A740 /* ClosedShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClosedShape.h; sourceTree = "<group>"; };
 		6A8DE47314D9D9F90031A740 /* ClosedShape.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ClosedShape.mm; sourceTree = "<group>"; };
-		6A8DE47C14D9E1EC0031A740 /* JPFallingBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JPFallingBody.cpp; path = JellyPhysics/JPFallingBody.cpp; sourceTree = "<group>"; };
-		6A8DE47D14D9E1EC0031A740 /* JPFallingBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPFallingBody.h; path = JellyPhysics/JPFallingBody.h; sourceTree = "<group>"; };
 		6A8DE48014D9E20A0031A740 /* FallingBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FallingBody.h; sourceTree = "<group>"; };
 		6A8DE48114D9E20A0031A740 /* FallingBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FallingBody.mm; sourceTree = "<group>"; };
 		6A91E18C14D9C04B00A6D61C /* libjelly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjelly.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A91E18F14D9C04B00A6D61C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A91E19314D9C04B00A6D61C /* jelly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jelly-Prefix.pch"; sourceTree = "<group>"; };
+		6AC6DDC514DAF54000B45295 /* FallingBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FallingBody.cpp; path = JellyPhysics/FallingBody.cpp; sourceTree = "<group>"; };
+		6AC6DDC614DAF54000B45295 /* FallingBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FallingBody.h; path = JellyPhysics/FallingBody.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		6A8DE43614D9CE3B0031A740 /* JellyPhysics */ = {
 			isa = PBXGroup;
 			children = (
-				6A8DE47C14D9E1EC0031A740 /* JPFallingBody.cpp */,
-				6A8DE47D14D9E1EC0031A740 /* JPFallingBody.h */,
+				6AC6DDC514DAF54000B45295 /* FallingBody.cpp */,
+				6AC6DDC614DAF54000B45295 /* FallingBody.h */,
 				6A8DE43814D9CEAE0031A740 /* AABB.cpp */,
 				6A8DE43914D9CEAE0031A740 /* AABB.h */,
 				6A8DE43A14D9CEAE0031A740 /* Bitmask.h */,
@@ -203,8 +203,8 @@
 				6A8DE46E14D9D50E0031A740 /* Body.h in Headers */,
 				6A8DE47114D9D6150031A740 /* Opaque.h in Headers */,
 				6A8DE47414D9D9F90031A740 /* ClosedShape.h in Headers */,
-				6A8DE47F14D9E1EC0031A740 /* JPFallingBody.h in Headers */,
 				6A8DE48214D9E20A0031A740 /* FallingBody.h in Headers */,
+				6AC6DDC814DAF54000B45295 /* FallingBody.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +271,8 @@
 				6A8DE46914D9CEEF0031A740 /* World.mm in Sources */,
 				6A8DE46F14D9D50E0031A740 /* Body.mm in Sources */,
 				6A8DE47514D9D9F90031A740 /* ClosedShape.mm in Sources */,
-				6A8DE47E14D9E1EC0031A740 /* JPFallingBody.cpp in Sources */,
 				6A8DE48314D9E20A0031A740 /* FallingBody.mm in Sources */,
+				6AC6DDC714DAF54000B45295 /* FallingBody.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

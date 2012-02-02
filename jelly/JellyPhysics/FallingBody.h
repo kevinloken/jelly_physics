@@ -9,18 +9,21 @@
 #ifndef jelly_FallingBody_h
 #define jelly_FallingBody_h
 
-#include "SpringBody.h"
+#include "PressureBody.h"
 #include "Vector2.h"
 
 namespace JellyPhysics 
 {
-    class FallingBody : public SpringBody
+    class FallingBody : public PressureBody
     {
     public:
         FallingBody(World* w, ClosedShape& s, 
                     float massPerPoint,
+                    float gasPressure,
+                    float shapeK, float shapeD,
                     float edgeSpringK, float edgeSpringDamp, 
-                    Vector2 pos, float angle, Vector2 scale);
+                    Vector2 pos, float angle, Vector2 scale,
+                    bool kinematic);
         
         virtual void accumulateExternalForces();
     };

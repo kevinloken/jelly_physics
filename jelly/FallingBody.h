@@ -23,16 +23,21 @@ struct JPFallingBodyOpaque;
 
 -(id)initWithWorld:(World*) world 
              shape:(ClosedShape*)shape 
-      massPerPoint:(float)massPerPoint 
-          edgeSpringK:(float)edgeSpringK 
+      massPerPoint:(float)massPerPoint
+       gasPressure:(float)gasPressure
+            shapeK:(float)shapeK
+            shapeD:(float)shapeD
+       edgeSpringK:(float)edgeSpringK 
     edgeSpringDamp:(float)edgeSpringDamp
           position:(CGPoint)position
     angleInRadians:(float)angleInRadians
-             scale:(CGPoint)scale;
+             scale:(CGPoint)scale
+         kinematic:(BOOL)kinematic;
 
 -(void)addInternalSpring:(int)a pointB:(int)pointB springK:(float)springK damping:(float)damping;
 
 -(void)log;
 -(CGPoint)position;
+-(CGPoint)vertex:(int)index;
 
 @end

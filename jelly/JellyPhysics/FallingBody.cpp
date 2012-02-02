@@ -11,12 +11,21 @@
 namespace JellyPhysics 
 {
     
-
+/*
+ PressureBody(World* w, const ClosedShape& s, float mpp,
+ float gasPressure, float shapeK, float shapeD,
+ float edgeK, float edgeD,
+ const Vector2& pos, float angleInRadians, const Vector2& scale,
+ bool kinematic) 
+ */
 FallingBody::FallingBody(World* w, ClosedShape& s, 
             float massPerPoint,
+            float gasPressure,
+            float shapeK, float shapeD,
             float edgeSpringK, float edgeSpringDamp, 
-            Vector2 pos, float angle, Vector2 scale)
-: SpringBody(w,s,massPerPoint,edgeSpringK, edgeSpringDamp, pos, angle, scale, false)
+            Vector2 pos, float angle, Vector2 scale,
+            bool kinematic)
+: PressureBody(w,s,massPerPoint,gasPressure, shapeK, shapeD, edgeSpringK, edgeSpringDamp, pos, angle, scale, kinematic)
 {
 }
 
