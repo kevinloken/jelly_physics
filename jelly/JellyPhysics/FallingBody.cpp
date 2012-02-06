@@ -35,7 +35,7 @@ void FallingBody::accumulateExternalForces()
     
     // gravity!
     for (int i = 0; i < mPointMasses.size(); i++)
-        mPointMasses[i].Force += Vector2(0.f, -9.8f * mPointMasses[i].Mass);
+        mPointMasses[i].Force += Vector2(0.f, -9.81f * mPointMasses[i].Mass);
 }
 
 }

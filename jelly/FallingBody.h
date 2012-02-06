@@ -39,5 +39,6 @@ struct JPFallingBodyOpaque;
 -(void)log;
 -(CGPoint)position;
 -(CGPoint)vertex:(int)index;
+-(int)vertexCount;
 
 @end

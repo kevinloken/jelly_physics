@@ -72,4 +72,9 @@
     Vector2 position = self.cpp->body->getPointMass(index)->Position;
     return CGPointMake(position.X, position.Y);
 }
+
+-(int)vertexCount
+{
+    return self.cpp->body->getPointMassCount();
+}
 @end
